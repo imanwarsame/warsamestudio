@@ -1,0 +1,30 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+		"indent": [
+			"error",
+			"tab"
+		],
+		"linebreak-style": [
+			"error",
+			"windows"
+		],
+		"quotes": [
+			"error",
+			"single"
+		],
+		"react/prop-types": 0,
+		"semi": [
+			"error",
+			"always"
+		],
+		"eqeqeq": "error",
+		"no-trailing-spaces": "error",
+		"object-curly-spacing": [
+			"error", "always"
+		],
+		"arrow-spacing": [
+			"error", { "before": true, "after": true }
+		]
+	}
+}
