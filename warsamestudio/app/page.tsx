@@ -1,95 +1,16 @@
-import Image from 'next/image';
-import styles from './page.module.css';
+'use client';
+import { Box, Typography } from '@mui/material';
 
 export default function Home() {
 	return (
-		<main className={styles.main}>
-			<div className={styles.description}>
-				<p>
-          Get started by editing&nbsp;
-					<code className={styles.code}>app/page.tsx</code>
-				</p>
-				<div>
-					<a
-						href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-            By{' '}
-						<Image
-							src="/vercel.svg"
-							alt="Vercel Logo"
-							className={styles.vercelLogo}
-							width={100}
-							height={24}
-							priority
-						/>
-					</a>
-				</div>
-			</div>
-
-			<div className={styles.center}>
-				<Image
-					className={styles.logo}
-					src="/next.svg"
-					alt="Next.js Logo"
-					width={180}
-					height={37}
-					priority
-				/>
-			</div>
-
-			<div className={styles.grid}>
-				<a
-					href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-					className={styles.card}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<h2>
-            Docs <span>-&gt;</span>
-					</h2>
-					<p>Find in-depth information about Next.js features and API.</p>
-				</a>
-
-				<a
-					href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-					className={styles.card}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<h2>
-            Learn <span>-&gt;</span>
-					</h2>
-					<p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-				</a>
-
-				<a
-					href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-					className={styles.card}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<h2>
-            Templates <span>-&gt;</span>
-					</h2>
-					<p>Explore the Next.js 13 playground.</p>
-				</a>
-
-				<a
-					href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-					className={styles.card}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<h2>
-            Deploy <span>-&gt;</span>
-					</h2>
-					<p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-					</p>
-				</a>
-			</div>
-		</main>
+		<Box display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
+			<Typography>
+In modo data tius post an gnum. Mea otium res errem prava nec hac summe dubio. Innumeras res tur his perfectum essentiae. Utrum nihil ideis illum tango rum sed. Ad persuadere deceptorem immortalem cogitantem si in aliquoties affirmabam. Importare has cum cunctaque fit exhibetur usurpabam. Statuendum effecerunt deveniatur contrariae in addiscerem theologiae ne. Dici ei fere utor id vice sint ii nisi. Ii opinionem imaginata fortassis essentiae ab. Recte et signa vi sitas. Id videam delebo pudeat quinta nullum si ac oculos du. Catholicae nia viderentur institutum ita materialis. Missae habent angeli hos deo dat. Ad siquidem in cohiberi decipior rationes de doctrina. Assentiar intelligo ne generales opportune ea. Ipsius hae jam sicuti videor. Nam sitas mem circa fieri lus nia veram omnem. Patet has nulli pla imo vos forte. Mali rea esto novi sit haec hac nunc. Gi dubitare ut cernitur lectorum ab meditari. Et ex producatur explicetur at consuetudo exhibentur. Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. Profundum credendum summopere sap lus inspiciam confirmet. An imbecillia labefactat co incidissem im. Exhibetur inscitiae concilium ii at mo. Cupientem praeditis ii quocunque archimede procedere at ac. Mem firmae exigui nondum rea contra tam hoc nomine. Ii ut vultum ausint vereor ac. Ulla male suam sine ante uti meam nec sum. Foco ab ob im sane fore de nova tale. Brachia rom corpori nostrae saporem ingenio dum imo usu. Videbatur ab mo praestare fictitium at. Uti athei longe patet ita has. Fal mei eundemque perlegere hac infigatur tot interitum somniemus. Falsitas lus nia reliquis hic immittit. Spectari infinita venturum reperero loquebar jam cum etc elicitam. Se perspicuum aliquamdiu incrementi si contrarium. Gi potentem id in pertinet patiatur. Existimem referenda pergamque sum has eos naturalis detractis. To in ac ipsamet percipi at confusa. Vestro habebo co cumque ei du rursus gustum. Jure lus nec haud quas eos suo nisi. Imaginarer cognitione propositio in vi ne re desiderant. Assignem at tractant frigoris posuisse circulum ea. Vul cui aberrare sae sequatur superest utrumque. Cum asseverent efficietur existentia facillimam iii ima perfectius. Reddendum cui cum praeterea requirunt. Si positivum vi eo tantumdem succedens condemnat remanetne. Aspi hinc ac de sibi ha gnum. Toga dem meis nam tale. Ima nullamque formantur fidelibus sequentia sed via strepitum. Capaces materia ego aliquam humanum per assidue nos qui. Non revocare totumque competit reperire rei doctrina ubi vix. Quae ullo eas prae quid cito sae quin. Praecise duo scriptis tum est adipisci elicitam lor exsurgit frigoris. Dictis et to quorum dicunt moveri si ad. Somnis an in cetera captum eo. Contingere de occasionem hauriantur in ei faciliorem. Poterit peccato veritas formari per examino ceteris cau. Iii momentis videatur eas momentum per figurata defectus. Faciendam spontaneo notaverim experimur si et ob desumptas. Qua non exponantur industriam confirmari duo crediderim dum. Paulo brevi saepe scopo fit hos scire. Ima nullibi rum membris momenti. His lus cuncta essent potius. Saltem verbis meo ordine cur. Iii quaecumque nos respondere theologiae intelligat rei. Patet ullam lapis vi deest fieri mo eo ut. Iii ubi lor vitam multo vetus sub. Age quia fal more bono.
+In modo data tius post an gnum. Mea otium res errem prava nec hac summe dubio. Innumeras res tur his perfectum essentiae. Utrum nihil ideis illum tango rum sed. Ad persuadere deceptorem immortalem cogitantem si in aliquoties affirmabam. Importare has cum cunctaque fit exhibetur usurpabam. Statuendum effecerunt deveniatur contrariae in addiscerem theologiae ne. Dici ei fere utor id vice sint ii nisi. Ii opinionem imaginata fortassis essentiae ab. Recte et signa vi sitas. Id videam delebo pudeat quinta nullum si ac oculos du. Catholicae nia viderentur institutum ita materialis. Missae habent angeli hos deo dat. Ad siquidem in cohiberi decipior rationes de doctrina. Assentiar intelligo ne generales opportune ea. Ipsius hae jam sicuti videor. Nam sitas mem circa fieri lus nia veram omnem. Patet has nulli pla imo vos forte. Mali rea esto novi sit haec hac nunc. Gi dubitare ut cernitur lectorum ab meditari. Et ex producatur explicetur at consuetudo exhibentur. Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. Profundum credendum summopere sap lus inspiciam confirmet. An imbecillia labefactat co incidissem im. Exhibetur inscitiae concilium ii at mo. Cupientem praeditis ii quocunque archimede procedere at ac. Mem firmae exigui nondum rea contra tam hoc nomine. Ii ut vultum ausint vereor ac. Ulla male suam sine ante uti meam nec sum. Foco ab ob im sane fore de nova tale. Brachia rom corpori nostrae saporem ingenio dum imo usu. Videbatur ab mo praestare fictitium at. Uti athei longe patet ita has. Fal mei eundemque perlegere hac infigatur tot interitum somniemus. Falsitas lus nia reliquis hic immittit. Spectari infinita venturum reperero loquebar jam cum etc elicitam. Se perspicuum aliquamdiu incrementi si contrarium. Gi potentem id in pertinet patiatur. Existimem referenda pergamque sum has eos naturalis detractis. To in ac ipsamet percipi at confusa. Vestro habebo co cumque ei du rursus gustum. Jure lus nec haud quas eos suo nisi. Imaginarer cognitione propositio in vi ne re desiderant. Assignem at tractant frigoris posuisse circulum ea. Vul cui aberrare sae sequatur superest utrumque. Cum asseverent efficietur existentia facillimam iii ima perfectius. Reddendum cui cum praeterea requirunt. Si positivum vi eo tantumdem succedens condemnat remanetne. Aspi hinc ac de sibi ha gnum. Toga dem meis nam tale. Ima nullamque formantur fidelibus sequentia sed via strepitum. Capaces materia ego aliquam humanum per assidue nos qui. Non revocare totumque competit reperire rei doctrina ubi vix. Quae ullo eas prae quid cito sae quin. Praecise duo scriptis tum est adipisci elicitam lor exsurgit frigoris. Dictis et to quorum dicunt moveri si ad. Somnis an in cetera captum eo. Contingere de occasionem hauriantur in ei faciliorem. Poterit peccato veritas formari per examino ceteris cau. Iii momentis videatur eas momentum per figurata defectus. Faciendam spontaneo notaverim experimur si et ob desumptas. Qua non exponantur industriam confirmari duo crediderim dum. Paulo brevi saepe scopo fit hos scire. Ima nullibi rum membris momenti. His lus cuncta essent potius. Saltem verbis meo ordine cur. Iii quaecumque nos respondere theologiae intelligat rei. Patet ullam lapis vi deest fieri mo eo ut. Iii ubi lor vitam multo vetus sub. Age quia fal more bono.
+In modo data tius post an gnum. Mea otium res errem prava nec hac summe dubio. Innumeras res tur his perfectum essentiae. Utrum nihil ideis illum tango rum sed. Ad persuadere deceptorem immortalem cogitantem si in aliquoties affirmabam. Importare has cum cunctaque fit exhibetur usurpabam. Statuendum effecerunt deveniatur contrariae in addiscerem theologiae ne. Dici ei fere utor id vice sint ii nisi. Ii opinionem imaginata fortassis essentiae ab. Recte et signa vi sitas. Id videam delebo pudeat quinta nullum si ac oculos du. Catholicae nia viderentur institutum ita materialis. Missae habent angeli hos deo dat. Ad siquidem in cohiberi decipior rationes de doctrina. Assentiar intelligo ne generales opportune ea. Ipsius hae jam sicuti videor. Nam sitas mem circa fieri lus nia veram omnem. Patet has nulli pla imo vos forte. Mali rea esto novi sit haec hac nunc. Gi dubitare ut cernitur lectorum ab meditari. Et ex producatur explicetur at consuetudo exhibentur. Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. Profundum credendum summopere sap lus inspiciam confirmet. An imbecillia labefactat co incidissem im. Exhibetur inscitiae concilium ii at mo. Cupientem praeditis ii quocunque archimede procedere at ac. Mem firmae exigui nondum rea contra tam hoc nomine. Ii ut vultum ausint vereor ac. Ulla male suam sine ante uti meam nec sum. Foco ab ob im sane fore de nova tale. Brachia rom corpori nostrae saporem ingenio dum imo usu. Videbatur ab mo praestare fictitium at. Uti athei longe patet ita has. Fal mei eundemque perlegere hac infigatur tot interitum somniemus. Falsitas lus nia reliquis hic immittit. Spectari infinita venturum reperero loquebar jam cum etc elicitam. Se perspicuum aliquamdiu incrementi si contrarium. Gi potentem id in pertinet patiatur. Existimem referenda pergamque sum has eos naturalis detractis. To in ac ipsamet percipi at confusa. Vestro habebo co cumque ei du rursus gustum. Jure lus nec haud quas eos suo nisi. Imaginarer cognitione propositio in vi ne re desiderant. Assignem at tractant frigoris posuisse circulum ea. Vul cui aberrare sae sequatur superest utrumque. Cum asseverent efficietur existentia facillimam iii ima perfectius. Reddendum cui cum praeterea requirunt. Si positivum vi eo tantumdem succedens condemnat remanetne. Aspi hinc ac de sibi ha gnum. Toga dem meis nam tale. Ima nullamque formantur fidelibus sequentia sed via strepitum. Capaces materia ego aliquam humanum per assidue nos qui. Non revocare totumque competit reperire rei doctrina ubi vix. Quae ullo eas prae quid cito sae quin. Praecise duo scriptis tum est adipisci elicitam lor exsurgit frigoris. Dictis et to quorum dicunt moveri si ad. Somnis an in cetera captum eo. Contingere de occasionem hauriantur in ei faciliorem. Poterit peccato veritas formari per examino ceteris cau. Iii momentis videatur eas momentum per figurata defectus. Faciendam spontaneo notaverim experimur si et ob desumptas. Qua non exponantur industriam confirmari duo crediderim dum. Paulo brevi saepe scopo fit hos scire. Ima nullibi rum membris momenti. His lus cuncta essent potius. Saltem verbis meo ordine cur. Iii quaecumque nos respondere theologiae intelligat rei. Patet ullam lapis vi deest fieri mo eo ut. Iii ubi lor vitam multo vetus sub. Age quia fal more bono.
+In modo data tius post an gnum. Mea otium res errem prava nec hac summe dubio. Innumeras res tur his perfectum essentiae. Utrum nihil ideis illum tango rum sed. Ad persuadere deceptorem immortalem cogitantem si in aliquoties affirmabam. Importare has cum cunctaque fit exhibetur usurpabam. Statuendum effecerunt deveniatur contrariae in addiscerem theologiae ne. Dici ei fere utor id vice sint ii nisi. Ii opinionem imaginata fortassis essentiae ab. Recte et signa vi sitas. Id videam delebo pudeat quinta nullum si ac oculos du. Catholicae nia viderentur institutum ita materialis. Missae habent angeli hos deo dat. Ad siquidem in cohiberi decipior rationes de doctrina. Assentiar intelligo ne generales opportune ea. Ipsius hae jam sicuti videor. Nam sitas mem circa fieri lus nia veram omnem. Patet has nulli pla imo vos forte. Mali rea esto novi sit haec hac nunc. Gi dubitare ut cernitur lectorum ab meditari. Et ex producatur explicetur at consuetudo exhibentur. Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. Profundum credendum summopere sap lus inspiciam confirmet. An imbecillia labefactat co incidissem im. Exhibetur inscitiae concilium ii at mo. Cupientem praeditis ii quocunque archimede procedere at ac. Mem firmae exigui nondum rea contra tam hoc nomine. Ii ut vultum ausint vereor ac. Ulla male suam sine ante uti meam nec sum. Foco ab ob im sane fore de nova tale. Brachia rom corpori nostrae saporem ingenio dum imo usu. Videbatur ab mo praestare fictitium at. Uti athei longe patet ita has. Fal mei eundemque perlegere hac infigatur tot interitum somniemus. Falsitas lus nia reliquis hic immittit. Spectari infinita venturum reperero loquebar jam cum etc elicitam. Se perspicuum aliquamdiu incrementi si contrarium. Gi potentem id in pertinet patiatur. Existimem referenda pergamque sum has eos naturalis detractis. To in ac ipsamet percipi at confusa. Vestro habebo co cumque ei du rursus gustum. Jure lus nec haud quas eos suo nisi. Imaginarer cognitione propositio in vi ne re desiderant. Assignem at tractant frigoris posuisse circulum ea. Vul cui aberrare sae sequatur superest utrumque. Cum asseverent efficietur existentia facillimam iii ima perfectius. Reddendum cui cum praeterea requirunt. Si positivum vi eo tantumdem succedens condemnat remanetne. Aspi hinc ac de sibi ha gnum. Toga dem meis nam tale. Ima nullamque formantur fidelibus sequentia sed via strepitum. Capaces materia ego aliquam humanum per assidue nos qui. Non revocare totumque competit reperire rei doctrina ubi vix. Quae ullo eas prae quid cito sae quin. Praecise duo scriptis tum est adipisci elicitam lor exsurgit frigoris. Dictis et to quorum dicunt moveri si ad. Somnis an in cetera captum eo. Contingere de occasionem hauriantur in ei faciliorem. Poterit peccato veritas formari per examino ceteris cau. Iii momentis videatur eas momentum per figurata defectus. Faciendam spontaneo notaverim experimur si et ob desumptas. Qua non exponantur industriam confirmari duo crediderim dum. Paulo brevi saepe scopo fit hos scire. Ima nullibi rum membris momenti. His lus cuncta essent potius. Saltem verbis meo ordine cur. Iii quaecumque nos respondere theologiae intelligat rei. Patet ullam lapis vi deest fieri mo eo ut. Iii ubi lor vitam multo vetus sub. Age quia fal more bono.
+In modo data tius post an gnum. Mea otium res errem prava nec hac summe dubio. Innumeras res tur his perfectum essentiae. Utrum nihil ideis illum tango rum sed. Ad persuadere deceptorem immortalem cogitantem si in aliquoties affirmabam. Importare has cum cunctaque fit exhibetur usurpabam. Statuendum effecerunt deveniatur contrariae in addiscerem theologiae ne. Dici ei fere utor id vice sint ii nisi. Ii opinionem imaginata fortassis essentiae ab. Recte et signa vi sitas. Id videam delebo pudeat quinta nullum si ac oculos du. Catholicae nia viderentur institutum ita materialis. Missae habent angeli hos deo dat. Ad siquidem in cohiberi decipior rationes de doctrina. Assentiar intelligo ne generales opportune ea. Ipsius hae jam sicuti videor. Nam sitas mem circa fieri lus nia veram omnem. Patet has nulli pla imo vos forte. Mali rea esto novi sit haec hac nunc. Gi dubitare ut cernitur lectorum ab meditari. Et ex producatur explicetur at consuetudo exhibentur. Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. Profundum credendum summopere sap lus inspiciam confirmet. An imbecillia labefactat co incidissem im. Exhibetur inscitiae concilium ii at mo. Cupientem praeditis ii quocunque archimede procedere at ac. Mem firmae exigui nondum rea contra tam hoc nomine. Ii ut vultum ausint vereor ac. Ulla male suam sine ante uti meam nec sum. Foco ab ob im sane fore de nova tale. Brachia rom corpori nostrae saporem ingenio dum imo usu. Videbatur ab mo praestare fictitium at. Uti athei longe patet ita has. Fal mei eundemque perlegere hac infigatur tot interitum somniemus. Falsitas lus nia reliquis hic immittit. Spectari infinita venturum reperero loquebar jam cum etc elicitam. Se perspicuum aliquamdiu incrementi si contrarium. Gi potentem id in pertinet patiatur. Existimem referenda pergamque sum has eos naturalis detractis. To in ac ipsamet percipi at confusa. Vestro habebo co cumque ei du rursus gustum. Jure lus nec haud quas eos suo nisi. Imaginarer cognitione propositio in vi ne re desiderant. Assignem at tractant frigoris posuisse circulum ea. Vul cui aberrare sae sequatur superest utrumque. Cum asseverent efficietur existentia facillimam iii ima perfectius. Reddendum cui cum praeterea requirunt. Si positivum vi eo tantumdem succedens condemnat remanetne. Aspi hinc ac de sibi ha gnum. Toga dem meis nam tale. Ima nullamque formantur fidelibus sequentia sed via strepitum. Capaces materia ego aliquam humanum per assidue nos qui. Non revocare totumque competit reperire rei doctrina ubi vix. Quae ullo eas prae quid cito sae quin. Praecise duo scriptis tum est adipisci elicitam lor exsurgit frigoris. Dictis et to quorum dicunt moveri si ad. Somnis an in cetera captum eo. Contingere de occasionem hauriantur in ei faciliorem. Poterit peccato veritas formari per examino ceteris cau. Iii momentis videatur eas momentum per figurata defectus. Faciendam spontaneo notaverim experimur si et ob desumptas. Qua non exponantur industriam confirmari duo crediderim dum. Paulo brevi saepe scopo fit hos scire. Ima nullibi rum membris momenti. His lus cuncta essent potius. Saltem verbis meo ordine cur. Iii quaecumque nos respondere theologiae intelligat rei. Patet ullam lapis vi deest fieri mo eo ut. Iii ubi lor vitam multo vetus sub. Age quia fal more bono.
+			</Typography>
+		</Box>
 	);
 }
