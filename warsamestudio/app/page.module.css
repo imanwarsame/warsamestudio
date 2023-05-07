@@ -49,7 +49,7 @@
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
+  background: 'orange';
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
 }
@@ -89,7 +89,7 @@
 }
 
 .center::after {
-  background: var(--primary-glow);
+  background: 'orange';
   width: 240px;
   height: 180px;
   z-index: -1;
@@ -178,11 +178,7 @@
     border-radius: 0;
     border: none;
     border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
+    background: 'orange';
     background-clip: padding-box;
     backdrop-filter: blur(24px);
   }
