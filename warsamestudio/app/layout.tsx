@@ -1,12 +1,8 @@
 // import './globals.css';
-import { Inter } from 'next/font/google';
-import Navbar from '@/components/Navbar';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
 import Main from '@/components/Main';
-
-const inter = Inter({ subsets: ['latin'] });
-
+import { store } from '@/store';
+import { PropsWithChildren } from 'react';
+import { Provider } from 'react-redux';
 
 export const metadata = {
 	title: 'Warsame Studio',

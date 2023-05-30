@@ -15,8 +15,9 @@ export default function Navbar() {
 				</Toolbar>
 			</AppBar>
 			{/* 
-				Toolbar is rendering an empty toolbar component. It is added underneath the `AppBar` to ensure
-				that no content is hidden under the `AppBar` when using `position='fixed'`
+				The toolbar below is rendering an empty toolbar component. It is added underneath 
+				the `AppBar` to ensure that no content is hidden under the `AppBar` when using 
+				`position='fixed'`
 			*/}
 			<Toolbar/>
 		</Box>
