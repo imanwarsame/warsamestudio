@@ -1,8 +1,4 @@
-// import './globals.css';
-import Main from '@/components/Main';
-import { store } from '@/store';
-import { PropsWithChildren } from 'react';
-import { Provider } from 'react-redux';
+import App from '@/app';
 
 export const metadata = {
 	title: 'Warsame Studio',
@@ -20,7 +16,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<Main children={children}/>
+				<App children={children}/>
 			</body>
 		</html>
 	);
