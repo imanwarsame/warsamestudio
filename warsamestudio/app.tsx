@@ -3,7 +3,6 @@ import Main from './main';
 import { store } from './store';
 import { Provider } from 'react-redux';
 
-
 export default function App({
 	children,
 }: {

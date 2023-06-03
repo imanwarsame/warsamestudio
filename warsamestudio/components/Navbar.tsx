@@ -10,7 +10,7 @@ export default function Navbar() {
 		<Box sx={{ flexGrow: 1 }}>
 			<AppBar position='fixed' color='transparent' sx={{backdropFilter:"blur(5px)", border: 2, borderRadius: 10, borderColor: theme.palette.secondary.main }}>
 				<Toolbar>
-					<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>News</Typography>
+					<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>Warsame Studio</Typography>
 					<Button color="inherit">Login</Button>
 				</Toolbar>
 			</AppBar>

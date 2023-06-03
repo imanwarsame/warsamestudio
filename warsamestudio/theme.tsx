@@ -17,6 +17,12 @@ const lightTheme = createTheme({
 			primary: '#323232'
 		}
 	},
+	typography: {
+		fontFamily: [
+		  'Poppins',
+		  'sans-serif'
+		].join(','),
+	},
 	components: {
 		MuiPaper: {
 			styleOverrides: {
