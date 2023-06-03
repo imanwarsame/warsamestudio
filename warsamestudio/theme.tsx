@@ -4,23 +4,20 @@ const lightTheme = createTheme({
 	palette: {
 		mode: 'light',
 		primary: {
-			main: '#FFFFFF',
+			main: '#0B2447',
 		},
 		secondary: {
-			main: '#F38181',
+			main: '#323232',
 		},
 		background: {
+			default: '#F8F6F4',
 			paper: '#F9F7F7'
+		},
+		text: {
+			primary: '#323232'
 		}
 	},
 	components: {
-		MuiCssBaseline: {
-			styleOverrides: {
-				body: {
-					backgroundImage: 'linear-gradient(to right, #fceabb, #f8b500)'
-				},
-			}
-		},
 		MuiPaper: {
 			styleOverrides: {
 				root: {
