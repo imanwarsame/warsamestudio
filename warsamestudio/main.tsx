@@ -3,6 +3,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Navbar from '@/components/Navbar';
 import { darkTheme, lightTheme } from './theme';
+import { Box } from '@mui/material';
 // import ThemeToggle from './components/ThemeToggle';
 // import { useAppSelector } from './hooks';
 // import { themeSelector } from './reducers/ThemeReducer';
@@ -24,9 +25,9 @@ export default function Main({
 				{/* Globally resets CSS to create a baseline to build on */}
 				<CssBaseline />
 				<Navbar/>
-				<div>
+				<Box display='flex' flexDirection='column' alignItems='center' justifyContent='center' sx={{ backgroundColor: 'transparent' }}>
 					{children}
-				</div>
+				</Box>
 			</ThemeProvider>
 		</div>
 	);
