@@ -1,2 +1,2 @@
 # warsamestudio
-Portfolio website for architectural photography studio
+Portfolio website for architectural photography studio. WORK IN PROGRESS.
