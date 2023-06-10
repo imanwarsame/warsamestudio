@@ -6,88 +6,57 @@ import './styles.css';
 
 export default function Home() {
 	const [galleryVisible, setGalleryVisible] = React.useState(false);
+
 	const itemData = [
 		{
-			src: './13MercerStreet-3.1.jpg',
+			src: './bark_1.jpg',
 			title: 'Bed',
 		},
 		{
-			src: './4SlingsbyPlace-2.jpg',
+			src: './bark_2.jpg',
 			title: 'Books',
 		},
 		{
-			src: './7MercerStreet-4.jpg',
+			src: './bark_3.jpg',
 			title: 'Sink',
 		},
 		{
-			src: './DSC_9028.jpg',
+			src: './bark_4.jpg',
 			title: 'Kitchen',
 		},
 		{
-			src: './DSC_9080.jpg',
+			src: './bark_5.jpg',
 			title: 'Kitchen',
 		},
 		{
-			src: './DSC_9096.jpg',
+			src: './bark_6.jpg',
 			title: 'Kitchen',
 		},
 		{
-			src: './DSC_9118.jpg',
+			src: './bark_7.jpg',
 			title: 'Kitchen',
 		},
 		{
-			src: './DSC_9123.jpg',
+			src: './bark_8.jpg',
 			title: 'Kitchen',
 		},
 		{
-			src: './DSC_9180.jpg',
+			src: './bark_9.jpg',
 			title: 'Kitchen',
 		},
 		{
-			src: './DSC_9252.jpg',
+			src: './bark_10.jpg',
 			title: 'Kitchen',
-		},
-		{
-			src: './DSC_9312.jpg',
-			title: 'Kitchen',
-		},
-		{
-			src: './TheShard.jpg',
-			title: 'Kitchen',
-		},
-		{
-			src: './DSC_9377.jpg',
-			title: 'Kitchen',
-		},
-		{
-			src: './DSC_9384.jpg',
-			title: 'Kitchen',
-		},
-		{
-			src: './DSC_9468.jpg',
-			title: 'Kitchen',
-		},
-		{
-			src: './DSC_9472.jpg',
-			title: 'Kitchen',
-		},
-		{
-			src: './DSC_9477.jpg',
-			title: 'Kitchen',
-		},
-		{
-			src: './DSC_9498.jpg',
-			title: 'Kitchen',
-		},
-		{
-			src: './DSC_9125.jpg',
-			title: 'Kitchen',
-		},
+		}
 	];
 
-	React.useEffect(() => {
+	/* Using the `useLayoutEffect` hook from React to load all the images in the `itemData` array and set
+	the state of `galleryVisible` to `true` once all the images have been loaded. This ensures that the
+	images are fully loaded before they are displayed in the gallery. */
+	React.useLayoutEffect(() => {
 		itemData.forEach((picture) => {
-			new Image().src = picture.src;
+			const newImage = new Image();
+			newImage.src = picture.src;
 		});
 
 		setGalleryVisible(true);
@@ -99,7 +68,7 @@ export default function Home() {
 			opacity: 1,
 			scale: 1,
 			transition: {
-			delayChildren: 0.5,
+			delayChildren: 1,
 			staggerChildren: 0.2
 			}
 		}
@@ -121,11 +90,11 @@ export default function Home() {
 				<ImageList variant="masonry" cols={2} gap={8}>
 					<motion.ul className="container" variants={container} initial="hidden" animate="visible">
 					{itemData.map((index) => (
-						<motion.li key={index.src} className="item" variants={item}>
+						<motion.div key={index.src} className="item" variants={item}>
 							<ImageListItem key={index.src}>
 								<img src={index.src} srcSet={index.src} alt={index.title} loading='lazy'/>
 							</ImageListItem>
-						</motion.li>
+						</motion.div>
 					))}
 					</motion.ul>
 				</ImageList>
