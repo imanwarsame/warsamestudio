@@ -63,10 +63,9 @@ export default function Home() {
 	})
 
 	const container = {
-		hidden: { opacity: 1, scale: 0 },
+		hidden: { opacity: 1 },
 		visible: {
 			opacity: 1,
-			scale: 1,
 			transition: {
 			delayChildren: 1,
 			staggerChildren: 0.2
@@ -85,17 +84,16 @@ export default function Home() {
 	return (
 		<Grid container spacing={0} sx={{ width: '75%', mb: 5, mt: 1 }}>
 			<Grid item xs={12} sx={{ backgroundColor: 'transparent' }}>
-				{/* <PhotoAlbum layout='masonry' photos={itemData}/> */}
 				{galleryVisible &&
-				<ImageList variant="masonry" cols={2} gap={8}>
+				<ImageList variant="masonry" cols={2} gap={8} sx={{ height: '100%' }}>
 					<motion.ul className="container" variants={container} initial="hidden" animate="visible">
-					{itemData.map((index) => (
-						<motion.div key={index.src} className="item" variants={item}>
-							<ImageListItem key={index.src}>
-								<img src={index.src} srcSet={index.src} alt={index.title} loading='lazy'/>
-							</ImageListItem>
-						</motion.div>
-					))}
+						{itemData.map((index) => (
+							<motion.div key={index.src} className="item" variants={item}>
+								<ImageListItem key={index.src}>
+									<img src={index.src} srcSet={index.src} alt={index.title} loading='lazy'/>
+								</ImageListItem>
+							</motion.div>
+						))}
 					</motion.ul>
 				</ImageList>
 				}
