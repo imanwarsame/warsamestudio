@@ -4,6 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Navbar from '@/components/Navbar';
 import { darkTheme, lightTheme } from './theme';
 import { Box } from '@mui/material';
+import Footer from './components/Footer';
 // import ThemeToggle from './components/ThemeToggle';
 // import { useAppSelector } from './hooks';
 // import { themeSelector } from './reducers/ThemeReducer';
@@ -28,6 +29,7 @@ export default function Main({
 				<Box display='flex' flexDirection='column' alignItems='center' justifyContent='center' sx={{ backgroundColor: 'transparent' }}>
 					{children}
 				</Box>
+				<Footer name='Iman Warsame'/>
 			</ThemeProvider>
 		</div>
 	);

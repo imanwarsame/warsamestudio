@@ -105,7 +105,6 @@ export default function Home() {
 							</motion.ul>
 						</ImageList>
 					)}
-					<Typography>Hello</Typography>
 				</Grid>
 			</Grid>
 		</Grid>

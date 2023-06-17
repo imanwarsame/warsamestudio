@@ -45,7 +45,7 @@ export default function Navbar() {
 				'&:hover': { backgroundColor: 'transparent' },
 				color: linkColour,
 				ml: 2,
-				textTransform: 'capitalize',
+				textTransform: 'uppercase',
 				typography: 'h6'
 				}}
 			>
