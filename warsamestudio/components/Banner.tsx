@@ -14,7 +14,9 @@ export default function Banner() {
 				<Typography variant='h1' align='center' color='white'>Architectural Photography</Typography>
 				<Typography variant='body2' align='center' color='white'>London</Typography>
 			</Stack>
-			<Lottie animationData={scrollAnimation} height={50} width={50}/>		
-	  </Box>
+			<Box display='flex' alignItems='center' justifyContent='center' sx={{ position: 'absolute', bottom: '20px' }}>
+				<Lottie animationData={scrollAnimation} height={50} width={50} />
+			</Box>
+		</Box>
 	);
 }
