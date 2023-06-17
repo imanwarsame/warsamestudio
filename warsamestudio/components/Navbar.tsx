@@ -1,11 +1,12 @@
 'use client';
 import * as React from 'react';
 import { AppBar, Box, Toolbar, Button, Typography } from '@mui/material';
+import LinkButton from './LinkButton';
 import { useTheme } from '@mui/material/styles';
 
 export default function Navbar() {
-	const theme = useTheme();
 	const [isScrollPastBanner, setIsScrollPastBanner] = React.useState(false);
+	const theme = useTheme();
 
 	/* React hook that sets the state of `isScrollPastBanner` to `true` if the user has scrolled past the height
 	of the banner and `false` otherwise. Used to change colour of Navbar text. */
@@ -33,8 +34,14 @@ export default function Navbar() {
 			<AppBar position='fixed' color='transparent' sx={{ backdropFilter:"blur(5px)", borderRadius: '0px' }}>
 				<Toolbar>
 					<Typography variant="h6" component="div" sx={{ flexGrow: 1, color: isScrollPastBanner ? 'inherit' : 'white' }}>Warsame Studio</Typography>
-					<Typography variant="body2" component="div" sx={{ color: isScrollPastBanner ? 'inherit' : 'white', mr: 2 }}>About</Typography>
-					<Typography variant="body2" component="div" sx={{ color: isScrollPastBanner ? 'inherit' : 'white', mr: 2 }}>Contact</Typography>
+					<LinkButton type='button' href="/about" 
+					sx={{ color: isScrollPastBanner ? theme.palette.secondary.main : 'white', mr: 2, textTransform: 'capitalize', typography: 'body2' }}>
+						About
+					</LinkButton>
+					<LinkButton type='button' href="/contact" 
+					sx={{ color: isScrollPastBanner ? theme.palette.secondary.main : 'white', mr: 2, textTransform: 'capitalize', typography: 'body2' }}>
+						Contact
+					</LinkButton>
 				</Toolbar>
 			</AppBar>
 		</Box>
