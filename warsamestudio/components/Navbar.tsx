@@ -46,7 +46,7 @@ export default function Navbar() {
 				color: linkColour,
 				ml: 2,
 				textTransform: 'uppercase',
-				typography: 'h6'
+				typography: { sm: 'h6', xs: 'body2' }
 				}}
 			>
 				Warsame Studio
@@ -60,7 +60,7 @@ export default function Navbar() {
 					color: linkColour,
 					ml: 2,
 					textTransform: 'capitalize',
-					typography: 'body2'
+					typography: { sm: 'body2', xs: 'caption' }
 				}}
 				>
 				About
@@ -73,7 +73,7 @@ export default function Navbar() {
 					color: linkColour,
 					ml: 2,
 					textTransform: 'capitalize',
-					typography: 'body2'
+					typography: { sm: 'body2', xs: 'caption' }
 				}}
 				>
 				Contact

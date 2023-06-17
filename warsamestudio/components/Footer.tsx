@@ -11,7 +11,7 @@ export default function Footer({ name }: FooterProps): JSX.Element {
   
 	return (
 	  <footer style={{ textAlign: 'center', marginBottom: 5, marginTop: 5 }}>
-		<Typography variant="body2" color="textSecondary">
+		<Typography sx={{ typography: { md: 'body2', xs: 'caption' } }} color="textSecondary">
 		  Copyright &copy; {currentYear} {name} | All rights reserved
 		</Typography>
 	  </footer>
