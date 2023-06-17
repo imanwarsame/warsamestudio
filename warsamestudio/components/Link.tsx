@@ -11,7 +11,7 @@ interface LinkProps {
   [key: string]: any;
 }
 
-export default function LinkButton({ type, href, children, ...props }: LinkProps) {
+export default function Link({ type, href, children, ...props }: LinkProps) {
   if (type === "link" || !type) {
     return (
       <NextLink href={href} passHref>

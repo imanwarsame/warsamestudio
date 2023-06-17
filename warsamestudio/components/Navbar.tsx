@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import { AppBar, Box, Toolbar, Button, Typography } from '@mui/material';
-import LinkButton from './LinkButton';
+import Link from './Link';
 import { useTheme } from '@mui/material/styles';
 
 export default function Navbar() {
@@ -32,16 +32,25 @@ export default function Navbar() {
 	return (
 		<Box sx={{ flexGrow: 1 }}>
 			<AppBar position='fixed' color='transparent' sx={{ backdropFilter:"blur(5px)", borderRadius: '0px' }}>
-				<Toolbar>
-					<Typography variant="h6" component="div" sx={{ flexGrow: 1, color: isScrollPastBanner ? 'inherit' : 'white' }}>Warsame Studio</Typography>
-					<LinkButton type='button' href="/about" 
-					sx={{ color: isScrollPastBanner ? theme.palette.secondary.main : 'white', mr: 2, textTransform: 'capitalize', typography: 'body2' }}>
-						About
-					</LinkButton>
-					<LinkButton type='button' href="/contact" 
-					sx={{ color: isScrollPastBanner ? theme.palette.secondary.main : 'white', mr: 2, textTransform: 'capitalize', typography: 'body2' }}>
-						Contact
-					</LinkButton>
+				<Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+				<Link type='button' href="/" 
+					sx={{ '&:hover': { backgroundColor: 'transparent' }, 
+					color: isScrollPastBanner ? theme.palette.secondary.main : 'white', ml: 2, textTransform: 'capitalize', typography: 'h6' }}
+				>
+					Warsame Studio
+				</Link>
+				<Box>
+					<Link type='button' href="/about" 
+					sx={{ color: isScrollPastBanner ? theme.palette.secondary.main : 'white', ml: 2, textTransform: 'capitalize', typography: 'body2' }}
+					>
+					About
+					</Link>
+					<Link type='button' href="/contact" 
+					sx={{ color: isScrollPastBanner ? theme.palette.secondary.main : 'white', ml: 2, textTransform: 'capitalize', typography: 'body2' }}
+					>
+					Contact
+					</Link>
+				</Box>
 				</Toolbar>
 			</AppBar>
 		</Box>
