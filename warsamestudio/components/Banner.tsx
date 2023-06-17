@@ -13,15 +13,12 @@ export default function Banner() {
 		backgroundPosition: 'center center',
 		backgroundSize: 'cover',
 		backgroundAttachment: 'fixed'
-	};
-
-	//Boolean that checks whether the screen is larger than 1000 px to define text size
-	const matches = useMediaQuery('(min-width:1300px)');
+	};	
 	
 	return (
 		<Box display='flex' alignItems='center' justifyContent='center' sx={imageStyles}>
 			<Stack direction='column' display='flex' alignItems='center' spacing={4}>
-				<Typography variant={matches ? 'h1' : 'h3'} align='center' color='white'>Architectural Photography</Typography>
+				<Typography sx={{ typography: { lg: 'h1', md: 'h2', sm: 'h4', xs: 'h5' } }} align='center' color='white'>Architectural Photography</Typography>
 				<Typography variant='body2' align='center' color='white'>London</Typography>
 			</Stack>
 			<Box display='flex' alignItems='center' justifyContent='center' sx={{ position: 'absolute', bottom: '20px' }}>
