@@ -3,11 +3,12 @@ import { Grid, ImageList, ImageListItem, Typography, useMediaQuery } from '@mui/
 import { motion } from 'framer-motion';
 import React from 'react';
 import './styles.css';
+import Banner from '@/components/Banner';
 
 export default function Home() {
 	const [galleryVisible, setGalleryVisible] = React.useState(false);
 
-	const itemData = [
+	const imageData = [
 		{
 			src: './bark_1.jpg',
 			title: 'Bed',
@@ -54,7 +55,7 @@ export default function Home() {
 	the state of `galleryVisible` to `true` once all the images have been loaded. This ensures that the
 	images are fully loaded before they are displayed in the gallery. */
 	React.useLayoutEffect(() => {
-		itemData.forEach((picture) => {
+		imageData.forEach((picture) => {
 			const newImage = new Image();
 			newImage.src = picture.src;
 		});
@@ -85,12 +86,16 @@ export default function Home() {
 	const matches = useMediaQuery('(min-width:1000px)');
 
 	return (
-		<Grid container spacing={0} sx={{ width: '75%', mb: 5, mt: 1 }}>
+		<Grid container spacing={0} sx={{ width: '100%', mb: 5, mt: 0 }}>
+			<Grid item xs={12}>
+				<Banner/>
+			</Grid>
+			<Grid container sx={{ width: '75%' }}>
 			<Grid item xs={12} sx={{ backgroundColor: 'transparent' }}>
 				{galleryVisible &&
-				<ImageList variant="masonry" cols={matches ? 2 : 1} gap={8} sx={{ height: '100%' }}>
+				<ImageList variant="masonry" cols={matches ? 2 : 1} gap={8} sx={{ height: '100%', border: 4, pr: 5 }}>
 					<motion.ul className="container" variants={container} initial="hidden" animate="visible">
-						{itemData.map((index) => (
+						{imageData.map((index) => (
 							<motion.div key={index.src} className="item" variants={item}>
 								<ImageListItem key={index.src}>
 									<img src={index.src} srcSet={index.src} alt={index.title} loading='lazy'/>
@@ -101,6 +106,7 @@ export default function Home() {
 				</ImageList>
 				}
 				<Typography>Hello</Typography>
+			</Grid>
 			</Grid>
 		</Grid>
 	);

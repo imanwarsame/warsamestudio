@@ -19,7 +19,7 @@ export default function Navbar() {
 				the `AppBar` to ensure that no content is hidden under the `AppBar` when using 
 				`position='fixed'`
 			*/}
-			<Toolbar/>
+			{/* <Toolbar/> */}
 		</Box>
 	);
 }
