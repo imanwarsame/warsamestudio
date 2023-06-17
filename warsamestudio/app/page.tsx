@@ -90,23 +90,23 @@ export default function Home() {
 			<Grid item xs={12}>
 				<Banner/>
 			</Grid>
-			<Grid container sx={{ width: '75%' }}>
-			<Grid item xs={12} sx={{ backgroundColor: 'transparent' }}>
-				{galleryVisible &&
-				<ImageList variant="masonry" cols={matches ? 2 : 1} gap={8} sx={{ height: '100%', border: 4, pr: 5 }}>
-					<motion.ul className="container" variants={container} initial="hidden" animate="visible">
-						{imageData.map((index) => (
+			<Grid container sx={{ width: '100%', justifyContent: 'center' }}>
+				<Grid item xs={12} sm={9} sx={{ backgroundColor: 'transparent' }}>
+					{galleryVisible && (
+						<ImageList variant="masonry" cols={matches ? 2 : 1} gap={8} sx={{ height: '100%', pr: 5 }}>
+						<motion.ul className="container" variants={container} initial="hidden" animate="visible">
+							{imageData.map((index) => (
 							<motion.div key={index.src} className="item" variants={item}>
 								<ImageListItem key={index.src}>
-									<img src={index.src} srcSet={index.src} alt={index.title} loading='lazy'/>
+								<img src={index.src} srcSet={index.src} alt={index.title} loading='lazy'/>
 								</ImageListItem>
 							</motion.div>
-						))}
-					</motion.ul>
-				</ImageList>
-				}
-				<Typography>Hello</Typography>
-			</Grid>
+							))}
+						</motion.ul>
+						</ImageList>
+					)}
+					<Typography>Hello</Typography>
+				</Grid>
 			</Grid>
 		</Grid>
 	);
