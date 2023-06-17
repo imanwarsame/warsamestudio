@@ -1,5 +1,5 @@
 'use client';
-import { Grid, ImageList, ImageListItem, Typography } from '@mui/material';
+import { Grid, ImageList, ImageListItem, Typography, useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
 import React from 'react';
 import './styles.css';
@@ -81,11 +81,14 @@ export default function Home() {
 		}
 	};
 
+	//Boolean that checks whether the screen is larger than 1000 px to define gallery columns
+	const matches = useMediaQuery('(min-width:1000px)');
+
 	return (
 		<Grid container spacing={0} sx={{ width: '75%', mb: 5, mt: 1 }}>
 			<Grid item xs={12} sx={{ backgroundColor: 'transparent' }}>
 				{galleryVisible &&
-				<ImageList variant="masonry" cols={2} gap={8} sx={{ height: '100%' }}>
+				<ImageList variant="masonry" cols={matches ? 2 : 1} gap={8} sx={{ height: '100%' }}>
 					<motion.ul className="container" variants={container} initial="hidden" animate="visible">
 						{itemData.map((index) => (
 							<motion.div key={index.src} className="item" variants={item}>
