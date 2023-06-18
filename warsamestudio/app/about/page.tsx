@@ -1,14 +1,21 @@
 'use client';
 import { Grid, Stack, Typography } from '@mui/material';
 import ProfileImage from '../../public/Profile.jpg';
-import Image from 'next/legacy/image';
+import Image from "next/image";
 
 export default function About() {
 
 	return (
-		<Grid container spacing={2} sx={{ width: '75%', mb: 5, mt: 10 }}>
+        <Grid container spacing={2} sx={{ width: '75%', mb: 5, mt: 10 }}>
 			<Grid item md={6} sm={12}>
-				<Image src={ProfileImage} layout='responsive' alt='Profile image. Self portrait taken of the photographer using the cracked wing mirror of a motorbike'/>
+				<Image
+                    src={ProfileImage}
+                    alt='Profile image. Self portrait taken of the photographer using the cracked wing mirror of a motorbike'
+                    sizes="100vw"
+                    style={{
+                        width: "100%",
+                        height: "auto"
+                    }}/>
 			</Grid>
 			<Grid item md={6} sm={12}>
 				<Stack direction='column'>
@@ -19,5 +26,5 @@ export default function About() {
 				</Stack>
 			</Grid>
 		</Grid>
-	);
+    );
 }

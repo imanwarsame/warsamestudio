@@ -1,12 +1,12 @@
 'use client';
 import * as React from 'react';
-import { AppBar, Box, Toolbar, Button, Typography } from '@mui/material';
+import { AppBar, Box, Toolbar } from '@mui/material';
 import Link from './Link';
 import { useTheme } from '@mui/material/styles';
 
 export default function Navbar() {
 	const [isScrollPastBanner, setIsScrollPastBanner] = React.useState(false);
-	const [isDefaultPath, setDefaultPath] = React.useState(window.location.pathname === '/');
+	const [isDefaultPath, setDefaultPath] = React.useState(true);
 	const theme = useTheme();
 
 	/* React hook that sets the state of `isScrollPastBanner` to `true` if the user has scrolled past the height
