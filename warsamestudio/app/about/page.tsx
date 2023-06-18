@@ -1,13 +1,14 @@
 'use client';
 import { Grid, Stack, Typography } from '@mui/material';
 import ProfileImage from '../../public/Profile.jpg';
+import Image from 'next/legacy/image';
 
 export default function About() {
 
 	return (
 		<Grid container spacing={2} sx={{ width: '75%', mb: 5, mt: 10 }}>
 			<Grid item md={6} sm={12}>
-				<img src={ProfileImage.src}/>
+				<Image src={ProfileImage} layout='responsive' alt='Profile image. Self portrait taken of the photographer using the cracked wing mirror of a motorbike'/>
 			</Grid>
 			<Grid item md={6} sm={12}>
 				<Stack direction='column'>
